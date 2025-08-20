@@ -1,0 +1,245 @@
+# .github/workflows/convert-ip-ranges.yml
+name: Convert IP Ranges to OpenClash Format
+
+on:
+  schedule:
+    # Run every 12 hours (at 00:00 and 12:00 UTC)
+    - cron: '0 0,12 * * *'
+  
+  workflow_dispatch:
+    # Allow manual triggering
+    inputs:
+      force_update:
+        description: 'Force update even if no changes detected'
+        required: false
+        default: 'false'
+        type: boolean
+
+jobs:
+  convert-ip-ranges:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 0
+
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          pip install requests pyyaml
+
+      - name: Clone ipranges repository
+        run: |
+          git clone https://github.com/lord-alfred/ipranges.git temp-ipranges
+
+      - name: Create conversion script
+        run: |
+          cat << 'EOF' > convert_ranges.py
+          import os
+          import re
+          import requests
+          import yaml
+          from pathlib import Path
+          import json
+          from datetime import datetime
+
+          def fetch_file_list():
+              temp_dir = Path("temp-ipranges")
+              
+              if not temp_dir.exists():
+                  print("Error: temp-ipranges directory not found")
+                  return []
+              
+              txt_files = []
+              for file_path in temp_dir.rglob("*.txt"):
+                  if not file_path.name.lower().startswith('readme'):
+                      txt_files.append({
+                          'name': file_path.name,
+                          'local_path': file_path,
+                          'relative_path': file_path.relative_to(temp_dir)
+                      })
+              
+              print(f"Found {len(txt_files)} .txt files")
+              for file_info in txt_files:
+                  print(f"  - {file_info['relative_path']}")
+              
+              return txt_files
+
+          def download_and_convert(file_info, output_dir):
+              file_name = file_info['name']
+              local_path = file_info['local_path']
+              relative_path = file_info['relative_path']
+              
+              print(f"Processing {relative_path}...")
+              
+              try:
+                  with open(local_path, 'r', encoding='utf-8') as f:
+                      content = f.read().strip()
+                  
+                  if not content:
+                      print(f"  Skipping {relative_path} (empty file)")
+                      return False
+                  
+                  ip_ranges = []
+                  total_lines = 0
+                  
+                  for line in content.split('\n'):
+                      line = line.strip()
+                      total_lines += 1
+                      
+                      if line and not line.startswith('#'):
+                          if re.match(r'^(\d{1,3}\.){3}\d{1,3}(/\d{1,2})?$', line):
+                              if '/' not in line:
+                                  line += '/32'
+                              ip_ranges.append(line)
+                          else:
+                              if re.match(r'^[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$', line):
+                                  continue
+                  
+                  if not ip_ranges:
+                      print(f"  Skipping {relative_path} (no valid IP ranges found from {total_lines} lines)")
+                      return False
+                  
+                  base_name = str(relative_path).replace('.txt', '').replace('/', '-').replace('\\', '-')
+                  output_file = output_dir / f"{base_name}.yaml"
+                  
+                  with open(output_file, 'w', encoding='utf-8') as f:
+                      f.write("payload:\n")
+                      for ip_range in ip_ranges:
+                          f.write(f"  - {ip_range}\n")
+                  
+                  print(f"  ✓ Converted {relative_path} -> {output_file.name} ({len(ip_ranges)} rules from {total_lines} lines)")
+                  return True
+                  
+              except Exception as e:
+                  print(f"  ✗ Error processing {relative_path}: {e}")
+                  return False
+
+          def main():
+              output_dir = Path("openclash-rules")
+              output_dir.mkdir(exist_ok=True)
+              
+              readme_content = """# OpenClash Compatible IP Range Rules
+
+          This directory contains IP range rules converted from the [ipranges repository](https://github.com/lord-alfred/ipranges) to OpenClash-compatible YAML format.
+
+          ## Usage
+
+          Add these rule providers to your OpenClash configuration:
+
+          ```yaml
+          rule-providers:
+            country-name:
+              type: http
+              behavior: ipcidr
+              url: "https://raw.githubusercontent.com/YOUR-USERNAME/YOUR-REPO/main/openclash-rules/COUNTRY.yaml"
+              path: ./ruleset/country-name.yaml
+              interval: 43200  # 12 hours
+          ```
+
+          Then use in rules:
+          ```yaml
+          rules:
+            - RULE-SET,country-name,DIRECT
+          ```
+
+          ## Files
+
+          """
+              
+              files = fetch_file_list()
+              converted_count = 0
+              file_info = []
+              
+              for file_info_item in files:
+                  if download_and_convert(file_info_item, output_dir):
+                      converted_count += 1
+                      base_name = str(file_info_item['relative_path']).replace('.txt', '').replace('/', '-').replace('\\', '-')
+                      service_name = file_info_item['relative_path'].parent.name if file_info_item['relative_path'].parent.name != '.' else 'root'
+                      file_info.append(f"- `{base_name}.yaml` - {service_name.upper()} {file_info_item['name'].replace('.txt', '')} IP ranges")
+              
+              readme_content += '\n'.join(file_info)
+              readme_content += f"\n\n*Last updated: {datetime.utcnow().isoformat()}Z*\n"
+              readme_content += f"*Total files converted: {converted_count}*\n"
+              
+              with open(output_dir / "README.md", 'w') as f:
+                  f.write(readme_content)
+              
+              print(f"\nConversion complete! {converted_count} files processed.")
+              
+              with open("conversion_summary.txt", 'w') as f:
+                  f.write(f"Converted {converted_count} IP range files to OpenClash format")
+              
+              import shutil
+              if Path("temp-ipranges").exists():
+                  shutil.rmtree("temp-ipranges")
+
+          if __name__ == "__main__":
+              main()
+          EOF
+
+      - name: Run conversion script
+        run: python convert_ranges.py
+
+      - name: Check for changes
+        id: check_git_changes
+        run: |
+          if git diff --quiet HEAD -- openclash-rules/; then
+            echo "has_changes=false" >> $GITHUB_OUTPUT
+          else
+            echo "has_changes=true" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Commit and push changes
+        if: steps.check_git_changes.outputs.has_changes == 'true' || github.event.inputs.force_update == 'true'
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          
+          git add openclash-rules/
+          
+          SUMMARY=$(cat conversion_summary.txt)
+          
+          git commit -m "🤖 Auto-update OpenClash IP ranges
+
+          $SUMMARY
+          
+          Updated: $(date -u '+%Y-%m-%d %H:%M:%S UTC')
+          Source: https://github.com/lord-alfred/ipranges" || exit 0
+          
+          git push
+
+      - name: Create release summary
+        if: steps.check_git_changes.outputs.has_changes == 'true' || github.event.inputs.force_update == 'true'
+        run: |
+          echo "## 📋 Conversion Summary" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          cat conversion_summary.txt >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "### 📁 Generated Files" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "| File | Size | Rules |" >> $GITHUB_STEP_SUMMARY
+          echo "|------|------|-------|" >> $GITHUB_STEP_SUMMARY
+          
+          for file in openclash-rules/*.yaml; do
+            if [ -f "$file" ]; then
+              filename=$(basename "$file")
+              size=$(du -h "$file" | cut -f1)
+              rules=$(grep -c "IP-CIDR" "$file" || echo "0")
+              echo "| $filename | $size | $rules |" >> $GITHUB_STEP_SUMMARY
+            fi
+          done
+
+      - name: No changes detected
+        if: steps.check_git_changes.outputs.has_changes == 'false' && github.event.inputs.force_update != 'true'
+        run: |
+          echo "## ℹ️ No Changes Detected" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "No updates were needed for the IP range files." >> $GITHUB_STEP_SUMMARY 
