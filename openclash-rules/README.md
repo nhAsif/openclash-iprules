@@ -63,5 +63,5 @@ rules:
 - `perplexity-ipv4.yaml` - PERPLEXITY ipv4 IP ranges
 - `perplexity-ipv4_merged.yaml` - PERPLEXITY ipv4_merged IP ranges
 
-*Last updated: 2025-08-20T18:13:53.386852Z*
+*Last updated: 2025-08-20T18:22:24.172574Z*
 *Total files converted: 38*
