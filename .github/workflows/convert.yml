@@ -83,19 +83,19 @@ jobs:
                       print(f"Warning: {repo['source_dir']} directory not found")
                       continue
                   
-                                                        txt_files = []
-                   # Look for .txt files and also .rsc files for RouterOS
-                   for file_path in temp_dir.rglob("*"):
-                       if (file_path.suffix.lower() in ['.txt', '.rsc'] and 
-                           not file_path.name.lower().startswith('readme')):
-                           txt_files.append({
-                               'name': file_path.name,
-                               'local_path': file_path,
-                               'relative_path': file_path.relative_to(temp_dir),
-                               'repo_name': repo['name'],
-                               'repo_prefix': repo['prefix'],
-                               'output_dir': repo['output_dir']
-                           })
+                  txt_files = []
+                  # Look for .txt files and also .rsc files for RouterOS
+                  for file_path in temp_dir.rglob("*"):
+                      if (file_path.suffix.lower() in ['.txt', '.rsc'] and 
+                          not file_path.name.lower().startswith('readme')):
+                          txt_files.append({
+                              'name': file_path.name,
+                              'local_path': file_path,
+                              'relative_path': file_path.relative_to(temp_dir),
+                              'repo_name': repo['name'],
+                              'repo_prefix': repo['prefix'],
+                              'output_dir': repo['output_dir']
+                          })
                   
                   print(f"Found {len(txt_files)} .txt files in {repo['name']}")
                   for file_info in txt_files:
@@ -216,7 +216,7 @@ jobs:
               interval: 86400  # 24 hours
           ```
 
-                               Then use in rules:
+          Then use in rules:
           ```yaml
           rules:
             - RULE-SET,facebook-ip,DIRECT
@@ -234,11 +234,11 @@ jobs:
               
               for file_info_item in files:
                   if download_and_convert(file_info_item, output_dir):
-                                             converted_count += 1
-                       base_name = str(file_info_item['relative_path']).replace('.txt', '').replace('/', '-').replace('\\', '-')
-                       service_name = file_info_item['relative_path'].parent.name if file_info_item['relative_path'].parent.name != '.' else 'root'
-                       output_filename = f"{base_name}.yaml"
-                       file_info.append(f"- `{file_info_item['output_dir']}/{output_filename}` - {file_info_item['repo_name'].upper()} {service_name.upper()} {file_info_item['name'].replace('.txt', '')} IP ranges")
+                      converted_count += 1
+                      base_name = str(file_info_item['relative_path']).replace('.txt', '').replace('/', '-').replace('\\', '-')
+                      service_name = file_info_item['relative_path'].parent.name if file_info_item['relative_path'].parent.name != '.' else 'root'
+                      output_filename = f"{base_name}.yaml"
+                      file_info.append(f"- `{file_info_item['output_dir']}/{output_filename}` - {file_info_item['repo_name'].upper()} {service_name.upper()} {file_info_item['name'].replace('.txt', '')} IP ranges")
               
               readme_content += '\n'.join(file_info)
               readme_content += f"\n\n*Last updated: {datetime.utcnow().isoformat()}Z*\n"
