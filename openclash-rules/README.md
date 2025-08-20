@@ -1,6 +1,11 @@
 # OpenClash Compatible IP Range Rules
 
-This directory contains IP range rules converted from the [ipranges repository](https://github.com/lord-alfred/ipranges) to OpenClash-compatible YAML format.
+This directory contains IP range rules converted from multiple repositories to OpenClash-compatible YAML format.
+
+## Sources
+
+- [ipranges repository](https://github.com/lord-alfred/ipranges) - Various service IP ranges
+- [YouTube IP list](https://github.com/touhidurrr/iplist-youtube) - YouTube IP ranges (IPv4, IPv6, CIDR)
 
 ## Usage
 
@@ -8,60 +13,111 @@ Add these rule providers to your OpenClash configuration:
 
 ```yaml
 rule-providers:
-  country-name:
+  # Example for Facebook IPs (from ipranges repository)
+  facebook-ip:
     type: http
     behavior: ipcidr
-    url: "https://raw.githubusercontent.com/YOUR-USERNAME/YOUR-REPO/main/openclash-rules/COUNTRY.yaml"
-    path: ./ruleset/country-name.yaml
-    interval: 43200  # 12 hours
+    url: "https://raw.githubusercontent.com/YOUR-USERNAME/YOUR-REPO/main/openclash-rules/ipranges/facebook-ipv4.yaml"
+    path: ./ruleset/facebook-ip.yaml
+    interval: 86400  # 24 hours
+  
+  # Example for YouTube IPv4 (from YouTube repository)
+  youtube-ipv4:
+    type: http
+    behavior: ipcidr
+    url: "https://raw.githubusercontent.com/YOUR-USERNAME/YOUR-REPO/main/openclash-rules/youtube/ipv4.yaml"
+    path: ./ruleset/youtube-ipv4.yaml
+    interval: 86400  # 24 hours
+  
+  # Example for YouTube IPv6 (from YouTube repository)
+  youtube-ipv6:
+    type: http
+    behavior: ipcidr
+    url: "https://raw.githubusercontent.com/YOUR-USERNAME/YOUR-REPO/main/openclash-rules/youtube/ipv6.yaml"
+    path: ./ruleset/youtube-ipv6.yaml
+    interval: 86400  # 24 hours
 ```
 
 Then use in rules:
 ```yaml
 rules:
-  - RULE-SET,country-name,DIRECT
+  - RULE-SET,facebook-ip,DIRECT
+  - RULE-SET,youtube-ipv4,DIRECT
+  - RULE-SET,youtube-ipv6,DIRECT
 ```
 
 ## Files
 
-- `googlebot-ipv4.yaml` - GOOGLEBOT ipv4 IP ranges
-- `googlebot-ipv4_merged.yaml` - GOOGLEBOT ipv4_merged IP ranges
-- `protonvpn-ipv4.yaml` - PROTONVPN ipv4 IP ranges
-- `protonvpn-ipv4_merged.yaml` - PROTONVPN ipv4_merged IP ranges
-- `microsoft-ipv4.yaml` - MICROSOFT ipv4 IP ranges
-- `microsoft-ipv4_merged.yaml` - MICROSOFT ipv4_merged IP ranges
-- `digitalocean-ipv4.yaml` - DIGITALOCEAN ipv4 IP ranges
-- `digitalocean-ipv4_merged.yaml` - DIGITALOCEAN ipv4_merged IP ranges
-- `apple-proxy-ipv4.yaml` - APPLE-PROXY ipv4 IP ranges
-- `apple-proxy-ipv4_merged.yaml` - APPLE-PROXY ipv4_merged IP ranges
-- `vultr-ipv4.yaml` - VULTR ipv4 IP ranges
-- `vultr-ipv4_merged.yaml` - VULTR ipv4_merged IP ranges
-- `cloudflare-ipv4.yaml` - CLOUDFLARE ipv4 IP ranges
-- `cloudflare-ipv4_merged.yaml` - CLOUDFLARE ipv4_merged IP ranges
-- `twitter-ipv4.yaml` - TWITTER ipv4 IP ranges
-- `twitter-ipv4_merged.yaml` - TWITTER ipv4_merged IP ranges
-- `github-ipv4.yaml` - GITHUB ipv4 IP ranges
-- `github-ipv4_merged.yaml` - GITHUB ipv4_merged IP ranges
-- `linode-ipv4.yaml` - LINODE ipv4 IP ranges
-- `linode-ipv4_merged.yaml` - LINODE ipv4_merged IP ranges
-- `bing-ipv4.yaml` - BING ipv4 IP ranges
-- `bing-ipv4_merged.yaml` - BING ipv4_merged IP ranges
-- `oracle-ipv4.yaml` - ORACLE ipv4 IP ranges
-- `oracle-ipv4_merged.yaml` - ORACLE ipv4_merged IP ranges
-- `google-ipv4.yaml` - GOOGLE ipv4 IP ranges
-- `google-ipv4_merged.yaml` - GOOGLE ipv4_merged IP ranges
-- `all-ipv4.yaml` - ALL ipv4 IP ranges
-- `all-ipv4_merged.yaml` - ALL ipv4_merged IP ranges
-- `telegram-ipv4.yaml` - TELEGRAM ipv4 IP ranges
-- `telegram-ipv4_merged.yaml` - TELEGRAM ipv4_merged IP ranges
-- `openai-ipv4.yaml` - OPENAI ipv4 IP ranges
-- `openai-ipv4_merged.yaml` - OPENAI ipv4_merged IP ranges
-- `facebook-ipv4.yaml` - FACEBOOK ipv4 IP ranges
-- `facebook-ipv4_merged.yaml` - FACEBOOK ipv4_merged IP ranges
-- `amazon-ipv4.yaml` - AMAZON ipv4 IP ranges
-- `amazon-ipv4_merged.yaml` - AMAZON ipv4_merged IP ranges
-- `perplexity-ipv4.yaml` - PERPLEXITY ipv4 IP ranges
-- `perplexity-ipv4_merged.yaml` - PERPLEXITY ipv4_merged IP ranges
+- `ipranges/googlebot-ipv6_merged.yaml` - IPRANGES GOOGLEBOT ipv6_merged IP ranges
+- `ipranges/googlebot-ipv4.yaml` - IPRANGES GOOGLEBOT ipv4 IP ranges
+- `ipranges/googlebot-ipv6.yaml` - IPRANGES GOOGLEBOT ipv6 IP ranges
+- `ipranges/googlebot-ipv4_merged.yaml` - IPRANGES GOOGLEBOT ipv4_merged IP ranges
+- `ipranges/protonvpn-ipv4.yaml` - IPRANGES PROTONVPN ipv4 IP ranges
+- `ipranges/protonvpn-ipv4_merged.yaml` - IPRANGES PROTONVPN ipv4_merged IP ranges
+- `ipranges/microsoft-ipv6_merged.yaml` - IPRANGES MICROSOFT ipv6_merged IP ranges
+- `ipranges/microsoft-ipv4.yaml` - IPRANGES MICROSOFT ipv4 IP ranges
+- `ipranges/microsoft-ipv6.yaml` - IPRANGES MICROSOFT ipv6 IP ranges
+- `ipranges/microsoft-ipv4_merged.yaml` - IPRANGES MICROSOFT ipv4_merged IP ranges
+- `ipranges/digitalocean-ipv6_merged.yaml` - IPRANGES DIGITALOCEAN ipv6_merged IP ranges
+- `ipranges/digitalocean-ipv4.yaml` - IPRANGES DIGITALOCEAN ipv4 IP ranges
+- `ipranges/digitalocean-ipv6.yaml` - IPRANGES DIGITALOCEAN ipv6 IP ranges
+- `ipranges/digitalocean-ipv4_merged.yaml` - IPRANGES DIGITALOCEAN ipv4_merged IP ranges
+- `ipranges/apple-proxy-ipv6_merged.yaml` - IPRANGES APPLE-PROXY ipv6_merged IP ranges
+- `ipranges/apple-proxy-ipv4.yaml` - IPRANGES APPLE-PROXY ipv4 IP ranges
+- `ipranges/apple-proxy-ipv6.yaml` - IPRANGES APPLE-PROXY ipv6 IP ranges
+- `ipranges/apple-proxy-ipv4_merged.yaml` - IPRANGES APPLE-PROXY ipv4_merged IP ranges
+- `ipranges/vultr-ipv6_merged.yaml` - IPRANGES VULTR ipv6_merged IP ranges
+- `ipranges/vultr-ipv4.yaml` - IPRANGES VULTR ipv4 IP ranges
+- `ipranges/vultr-ipv6.yaml` - IPRANGES VULTR ipv6 IP ranges
+- `ipranges/vultr-ipv4_merged.yaml` - IPRANGES VULTR ipv4_merged IP ranges
+- `ipranges/cloudflare-ipv6_merged.yaml` - IPRANGES CLOUDFLARE ipv6_merged IP ranges
+- `ipranges/cloudflare-ipv4.yaml` - IPRANGES CLOUDFLARE ipv4 IP ranges
+- `ipranges/cloudflare-ipv6.yaml` - IPRANGES CLOUDFLARE ipv6 IP ranges
+- `ipranges/cloudflare-ipv4_merged.yaml` - IPRANGES CLOUDFLARE ipv4_merged IP ranges
+- `ipranges/twitter-ipv6_merged.yaml` - IPRANGES TWITTER ipv6_merged IP ranges
+- `ipranges/twitter-ipv4.yaml` - IPRANGES TWITTER ipv4 IP ranges
+- `ipranges/twitter-ipv6.yaml` - IPRANGES TWITTER ipv6 IP ranges
+- `ipranges/twitter-ipv4_merged.yaml` - IPRANGES TWITTER ipv4_merged IP ranges
+- `ipranges/github-ipv6_merged.yaml` - IPRANGES GITHUB ipv6_merged IP ranges
+- `ipranges/github-ipv4.yaml` - IPRANGES GITHUB ipv4 IP ranges
+- `ipranges/github-ipv6.yaml` - IPRANGES GITHUB ipv6 IP ranges
+- `ipranges/github-ipv4_merged.yaml` - IPRANGES GITHUB ipv4_merged IP ranges
+- `ipranges/linode-ipv6_merged.yaml` - IPRANGES LINODE ipv6_merged IP ranges
+- `ipranges/linode-ipv4.yaml` - IPRANGES LINODE ipv4 IP ranges
+- `ipranges/linode-ipv6.yaml` - IPRANGES LINODE ipv6 IP ranges
+- `ipranges/linode-ipv4_merged.yaml` - IPRANGES LINODE ipv4_merged IP ranges
+- `ipranges/bing-ipv4.yaml` - IPRANGES BING ipv4 IP ranges
+- `ipranges/bing-ipv4_merged.yaml` - IPRANGES BING ipv4_merged IP ranges
+- `ipranges/oracle-ipv4.yaml` - IPRANGES ORACLE ipv4 IP ranges
+- `ipranges/oracle-ipv4_merged.yaml` - IPRANGES ORACLE ipv4_merged IP ranges
+- `ipranges/google-ipv6_merged.yaml` - IPRANGES GOOGLE ipv6_merged IP ranges
+- `ipranges/google-ipv4.yaml` - IPRANGES GOOGLE ipv4 IP ranges
+- `ipranges/google-ipv6.yaml` - IPRANGES GOOGLE ipv6 IP ranges
+- `ipranges/google-ipv4_merged.yaml` - IPRANGES GOOGLE ipv4_merged IP ranges
+- `ipranges/all-ipv6_merged.yaml` - IPRANGES ALL ipv6_merged IP ranges
+- `ipranges/all-ipv4.yaml` - IPRANGES ALL ipv4 IP ranges
+- `ipranges/all-ipv6.yaml` - IPRANGES ALL ipv6 IP ranges
+- `ipranges/all-ipv4_merged.yaml` - IPRANGES ALL ipv4_merged IP ranges
+- `ipranges/telegram-ipv6_merged.yaml` - IPRANGES TELEGRAM ipv6_merged IP ranges
+- `ipranges/telegram-ipv4.yaml` - IPRANGES TELEGRAM ipv4 IP ranges
+- `ipranges/telegram-ipv6.yaml` - IPRANGES TELEGRAM ipv6 IP ranges
+- `ipranges/telegram-ipv4_merged.yaml` - IPRANGES TELEGRAM ipv4_merged IP ranges
+- `ipranges/openai-ipv4.yaml` - IPRANGES OPENAI ipv4 IP ranges
+- `ipranges/openai-ipv4_merged.yaml` - IPRANGES OPENAI ipv4_merged IP ranges
+- `ipranges/facebook-ipv6_merged.yaml` - IPRANGES FACEBOOK ipv6_merged IP ranges
+- `ipranges/facebook-ipv4.yaml` - IPRANGES FACEBOOK ipv4 IP ranges
+- `ipranges/facebook-ipv6.yaml` - IPRANGES FACEBOOK ipv6 IP ranges
+- `ipranges/facebook-ipv4_merged.yaml` - IPRANGES FACEBOOK ipv4_merged IP ranges
+- `ipranges/amazon-ipv6_merged.yaml` - IPRANGES AMAZON ipv6_merged IP ranges
+- `ipranges/amazon-ipv4.yaml` - IPRANGES AMAZON ipv4 IP ranges
+- `ipranges/amazon-ipv6.yaml` - IPRANGES AMAZON ipv6 IP ranges
+- `ipranges/amazon-ipv4_merged.yaml` - IPRANGES AMAZON ipv4_merged IP ranges
+- `ipranges/perplexity-ipv4.yaml` - IPRANGES PERPLEXITY ipv4 IP ranges
+- `ipranges/perplexity-ipv4_merged.yaml` - IPRANGES PERPLEXITY ipv4_merged IP ranges
+- `youtube/cidr6.yaml` - YOUTUBE  cidr6 IP ranges
+- `youtube/ipv4.yaml` - YOUTUBE  ipv4 IP ranges
+- `youtube/ipv6.yaml` - YOUTUBE  ipv6 IP ranges
+- `youtube/cidr4.yaml` - YOUTUBE  cidr4 IP ranges
 
-*Last updated: 2025-08-20T18:22:24.172574Z*
-*Total files converted: 38*
+*Last updated: 2025-08-20T18:40:12.335909Z*
+*Total files converted: 70*
