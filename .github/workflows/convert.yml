@@ -51,8 +51,9 @@ jobs:
 
       - name: Create conversion script
         run: |
-          # Strip 10 leading spaces added by YAML indentation so Python is not unexpectedly indented
-          cat << 'PY' | sed 's/^ \{10\}//' > convert_ranges.py
+          python - <<'PY'
+          from textwrap import dedent
+          code = dedent('''
           import os
           import re
           import requests
@@ -271,6 +272,9 @@ jobs:
 
           if __name__ == "__main__":
               main()
+          ''')
+          with open('convert_ranges.py','w', encoding='utf-8') as f:
+              f.write(code)
           PY
 
       - name: Run conversion script
