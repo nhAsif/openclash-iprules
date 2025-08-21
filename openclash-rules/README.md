@@ -6,6 +6,7 @@ This directory contains IP range rules converted from multiple repositories to O
 
 - [ipranges repository](https://github.com/lord-alfred/ipranges) - Various service IP ranges
 - [YouTube IP list](https://github.com/touhidurrr/iplist-youtube) - YouTube IP ranges (IPv4, IPv6, CIDR)
+- [IP-Prefix-List](https://github.com/sakib-m/IP-Prefix-List) - IP prefixes for many companies
 
 ## Usage
 
@@ -20,7 +21,7 @@ rule-providers:
     url: "https://raw.githubusercontent.com/YOUR-USERNAME/YOUR-REPO/main/openclash-rules/ipranges/facebook-ipv4.yaml"
     path: ./ruleset/facebook-ip.yaml
     interval: 86400  # 24 hours
-  
+
   # Example for YouTube IPv4 (from YouTube repository)
   youtube-ipv4:
     type: http
@@ -28,7 +29,7 @@ rule-providers:
     url: "https://raw.githubusercontent.com/YOUR-USERNAME/YOUR-REPO/main/openclash-rules/youtube/ipv4.yaml"
     path: ./ruleset/youtube-ipv4.yaml
     interval: 86400  # 24 hours
-  
+
   # Example for YouTube IPv6 (from YouTube repository)
   youtube-ipv6:
     type: http
@@ -118,6 +119,30 @@ rules:
 - `youtube/ipv4.yaml` - YOUTUBE  ipv4 IP ranges
 - `youtube/ipv6.yaml` - YOUTUBE  ipv6 IP ranges
 - `youtube/cidr4.yaml` - YOUTUBE  cidr4 IP ranges
+- `ip-prefix-list/AWS_EC2-only_ip_blocks.yaml` - IP-PREFIX-LIST AWS_EC2 only_ip_blocks IP ranges
+- `ip-prefix-list/IMO_PageBites-only_ip_blocks.yaml` - IP-PREFIX-LIST IMO_PAGEBITES only_ip_blocks IP ranges
+- `ip-prefix-list/MICROSOFT-only_ip_blocks.yaml` - IP-PREFIX-LIST MICROSOFT only_ip_blocks IP ranges
+- `ip-prefix-list/NETFLIX-only_ip_blocks.yaml` - IP-PREFIX-LIST NETFLIX only_ip_blocks IP ranges
+- `ip-prefix-list/FREE-FIRE_GARENA-only_ip_blocks.yaml` - IP-PREFIX-LIST FREE-FIRE_GARENA only_ip_blocks IP ranges
+- `ip-prefix-list/BIGO-only_ip_blocks.yaml` - IP-PREFIX-LIST BIGO only_ip_blocks IP ranges
+- `ip-prefix-list/FACEBOOK-only_ip_blocks.yaml` - IP-PREFIX-LIST FACEBOOK only_ip_blocks IP ranges
+- `ip-prefix-list/AMAZON-only_ip_blocks.yaml` - IP-PREFIX-LIST AMAZON only_ip_blocks IP ranges
+- `ip-prefix-list/GOOGLE-only_ip_blocks.yaml` - IP-PREFIX-LIST GOOGLE only_ip_blocks IP ranges
+- `ip-prefix-list/FASTLY-only_ip_blocks.yaml` - IP-PREFIX-LIST FASTLY only_ip_blocks IP ranges
+- `ip-prefix-list/CDN77-only_ip_blocks.yaml` - IP-PREFIX-LIST CDN77 only_ip_blocks IP ranges
+- `ip-prefix-list/AWS_S3-only_ip_blocks.yaml` - IP-PREFIX-LIST AWS_S3 only_ip_blocks IP ranges
+- `ip-prefix-list/AKAMAI-only_ip_blocks.yaml` - IP-PREFIX-LIST AKAMAI only_ip_blocks IP ranges
+- `ip-prefix-list/LINODE-only_ip_blocks.yaml` - IP-PREFIX-LIST LINODE only_ip_blocks IP ranges
+- `ip-prefix-list/ZOOM-only_ip_blocks.yaml` - IP-PREFIX-LIST ZOOM only_ip_blocks IP ranges
+- `ip-prefix-list/DIGITALOCEAN-only_ip_blocks.yaml` - IP-PREFIX-LIST DIGITALOCEAN only_ip_blocks IP ranges
+- `ip-prefix-list/ZENLAYER-only_ip_blocks.yaml` - IP-PREFIX-LIST ZENLAYER only_ip_blocks IP ranges
+- `ip-prefix-list/TELEGRAM-only_ip_blocks.yaml` - IP-PREFIX-LIST TELEGRAM only_ip_blocks IP ranges
+- `ip-prefix-list/AWS_CLOUDFRONT-only_ip_blocks.yaml` - IP-PREFIX-LIST AWS_CLOUDFRONT only_ip_blocks IP ranges
+- `ip-prefix-list/GOOGLE_CLOUD-only_ip_blocks.yaml` - IP-PREFIX-LIST GOOGLE_CLOUD only_ip_blocks IP ranges
+- `ip-prefix-list/VALVE-only_ip_blocks.yaml` - IP-PREFIX-LIST VALVE only_ip_blocks IP ranges
+- `ip-prefix-list/PUBG_TENCENT-only_ip_blocks.yaml` - IP-PREFIX-LIST PUBG_TENCENT only_ip_blocks IP ranges
+- `ip-prefix-list/CLOUDFLARE-only_ip_blocks.yaml` - IP-PREFIX-LIST CLOUDFLARE only_ip_blocks IP ranges
+- `ip-prefix-list/ALIBABA-only_ip_blocks.yaml` - IP-PREFIX-LIST ALIBABA only_ip_blocks IP ranges
 
-*Last updated: 2025-08-21T12:30:28.346247Z*
-*Total files converted: 70*
+*Last updated: 2025-08-21T13:33:53.908918Z*
+*Total files converted: 94*
