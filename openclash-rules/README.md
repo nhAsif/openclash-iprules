@@ -119,5 +119,5 @@ rules:
 - `youtube/ipv6.yaml` - YOUTUBE  ipv6 IP ranges
 - `youtube/cidr4.yaml` - YOUTUBE  cidr4 IP ranges
 
-*Last updated: 2025-08-21T01:09:28.347713Z*
+*Last updated: 2025-08-21T12:30:28.346247Z*
 *Total files converted: 70*
