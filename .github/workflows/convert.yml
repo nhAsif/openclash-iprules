@@ -53,7 +53,7 @@ jobs:
         run: |
           python - <<'PY'
           from textwrap import dedent
-          code = dedent('''
+          code = dedent(r'''
           import os
           import re
           import requests
