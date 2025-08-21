@@ -45,10 +45,14 @@ jobs:
           
           # Clone YouTube IP list repository
           git clone https://github.com/touhidurrr/iplist-youtube.git temp-youtube
+          
+          # Clone IP-Prefix-List repository
+          git clone https://github.com/sakib-m/IP-Prefix-List.git temp-ip-prefix-list
 
       - name: Create conversion script
         run: |
-          cat << 'EOF' > convert_ranges.py
+          # Strip 10 leading spaces added by YAML indentation so Python is not unexpectedly indented
+          cat << 'PY' | sed 's/^ \{10\}//' > convert_ranges.py
           import os
           import re
           import requests
@@ -70,6 +74,12 @@ jobs:
                   'source_dir': 'temp-youtube/lists',
                   'prefix': 'youtube',
                   'output_dir': 'youtube'
+              },
+              {
+                  'name': 'ip-prefix-list',
+                  'source_dir': 'temp-ip-prefix-list',
+                  'prefix': 'ip-prefix-list',
+                  'output_dir': 'ip-prefix-list'
               }
           ]
 
@@ -184,6 +194,7 @@ jobs:
 
           - [ipranges repository](https://github.com/lord-alfred/ipranges) - Various service IP ranges
           - [YouTube IP list](https://github.com/touhidurrr/iplist-youtube) - YouTube IP ranges (IPv4, IPv6, CIDR)
+          - [IP-Prefix-List](https://github.com/sakib-m/IP-Prefix-List) - IP prefixes for many companies
 
           ## Usage
 
@@ -254,13 +265,13 @@ jobs:
               
               import shutil
               # Cleanup all temporary directories
-              for temp_dir in ["temp-ipranges", "temp-youtube"]:
+              for temp_dir in ["temp-ipranges", "temp-youtube", "temp-ip-prefix-list"]:
                   if Path(temp_dir).exists():
                       shutil.rmtree(temp_dir)
 
           if __name__ == "__main__":
               main()
-          EOF
+          PY
 
       - name: Run conversion script
         run: python convert_ranges.py
