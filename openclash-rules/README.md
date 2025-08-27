@@ -144,5 +144,5 @@ rules:
 - `ip-prefix-list/CLOUDFLARE-only_ip_blocks.yaml` - IP-PREFIX-LIST CLOUDFLARE only_ip_blocks IP ranges
 - `ip-prefix-list/ALIBABA-only_ip_blocks.yaml` - IP-PREFIX-LIST ALIBABA only_ip_blocks IP ranges
 
-*Last updated: 2025-08-27T01:09:16.327766Z*
+*Last updated: 2025-08-27T12:30:37.571735Z*
 *Total files converted: 94*
