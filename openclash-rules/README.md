@@ -133,6 +133,7 @@ rules:
 - `ip-prefix-list/VALVE-only_ip_blocks.yaml` - IP-PREFIX-LIST VALVE only_ip_blocks IP ranges
 - `ip-prefix-list/AMAZON-only_ip_blocks.yaml` - IP-PREFIX-LIST AMAZON only_ip_blocks IP ranges
 - `ip-prefix-list/ZENLAYER-only_ip_blocks.yaml` - IP-PREFIX-LIST ZENLAYER only_ip_blocks IP ranges
+- `ip-prefix-list/DIGITALOCEAN-only_ip_blocks.yaml` - IP-PREFIX-LIST DIGITALOCEAN only_ip_blocks IP ranges
 - `ip-prefix-list/FREE-FIRE_GARENA-only_ip_blocks.yaml` - IP-PREFIX-LIST FREE-FIRE_GARENA only_ip_blocks IP ranges
 - `ip-prefix-list/BIGO-only_ip_blocks.yaml` - IP-PREFIX-LIST BIGO only_ip_blocks IP ranges
 - `ip-prefix-list/LINODE-only_ip_blocks.yaml` - IP-PREFIX-LIST LINODE only_ip_blocks IP ranges
@@ -143,5 +144,5 @@ rules:
 - `ip-prefix-list/GOOGLE-only_ip_blocks.yaml` - IP-PREFIX-LIST GOOGLE only_ip_blocks IP ranges
 - `ip-prefix-list/CLOUDFLARE-only_ip_blocks.yaml` - IP-PREFIX-LIST CLOUDFLARE only_ip_blocks IP ranges
 
-*Last updated: 2025-09-06T12:25:35.220688Z*
-*Total files converted: 93*
+*Last updated: 2025-09-07T01:12:08.803575Z*
+*Total files converted: 94*
