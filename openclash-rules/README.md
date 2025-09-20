@@ -144,5 +144,5 @@ rules:
 - `ip-prefix-list/GOOGLE-only_ip_blocks.yaml` - IP-PREFIX-LIST GOOGLE only_ip_blocks IP ranges
 - `ip-prefix-list/CLOUDFLARE-only_ip_blocks.yaml` - IP-PREFIX-LIST CLOUDFLARE only_ip_blocks IP ranges
 
-*Last updated: 2025-09-20T01:04:45.109448Z*
+*Last updated: 2025-09-20T12:27:15.754208Z*
 *Total files converted: 94*
