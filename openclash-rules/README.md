@@ -137,5 +137,5 @@ rules:
 - `ip-prefix-list/FASTLY-only_ip_blocks.yaml` - IP-PREFIX-LIST FASTLY only_ip_blocks IP ranges
 - `ip-prefix-list/GOOGLE-only_ip_blocks.yaml` - IP-PREFIX-LIST GOOGLE only_ip_blocks IP ranges
 
-*Last updated: 2025-10-03T01:05:55.269053Z*
+*Last updated: 2025-10-03T12:29:40.338181Z*
 *Total files converted: 87*
