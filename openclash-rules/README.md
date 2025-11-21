@@ -119,6 +119,7 @@ rules:
 - `youtube/cidr4.yaml` - YOUTUBE  cidr4 IP ranges
 - `youtube/cidr6.yaml` - YOUTUBE  cidr6 IP ranges
 - `youtube/ipv6.yaml` - YOUTUBE  ipv6 IP ranges
+- `ip-prefix-list/BIGO-only_ip_blocks.yaml` - IP-PREFIX-LIST BIGO only_ip_blocks IP ranges
 - `ip-prefix-list/LINODE-only_ip_blocks.yaml` - IP-PREFIX-LIST LINODE only_ip_blocks IP ranges
 - `ip-prefix-list/PUBG_TENCENT-only_ip_blocks.yaml` - IP-PREFIX-LIST PUBG_TENCENT only_ip_blocks IP ranges
 - `ip-prefix-list/IMO_PageBites-only_ip_blocks.yaml` - IP-PREFIX-LIST IMO_PAGEBITES only_ip_blocks IP ranges
@@ -143,5 +144,5 @@ rules:
 - `ip-prefix-list/GOOGLE-only_ip_blocks.yaml` - IP-PREFIX-LIST GOOGLE only_ip_blocks IP ranges
 - `ip-prefix-list/FACEBOOK-only_ip_blocks.yaml` - IP-PREFIX-LIST FACEBOOK only_ip_blocks IP ranges
 
-*Last updated: 2025-11-20T12:31:52.961763Z*
-*Total files converted: 93*
+*Last updated: 2025-11-21T01:11:57.564246Z*
+*Total files converted: 94*
