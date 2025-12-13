@@ -143,5 +143,5 @@ rules:
 - `ip-prefix-list/GOOGLE-only_ip_blocks.yaml` - IP-PREFIX-LIST GOOGLE only_ip_blocks IP ranges
 - `ip-prefix-list/FACEBOOK-only_ip_blocks.yaml` - IP-PREFIX-LIST FACEBOOK only_ip_blocks IP ranges
 
-*Last updated: 2025-12-13T01:12:10.793873Z*
+*Last updated: 2025-12-13T12:30:14.489081Z*
 *Total files converted: 93*
