@@ -126,7 +126,6 @@ rules:
 - `ip-prefix-list/MICROSOFT-only_ip_blocks.yaml` - IP-PREFIX-LIST MICROSOFT only_ip_blocks IP ranges
 - `ip-prefix-list/CDN77-only_ip_blocks.yaml` - IP-PREFIX-LIST CDN77 only_ip_blocks IP ranges
 - `ip-prefix-list/TELEGRAM-only_ip_blocks.yaml` - IP-PREFIX-LIST TELEGRAM only_ip_blocks IP ranges
-- `ip-prefix-list/ZENLAYER-only_ip_blocks.yaml` - IP-PREFIX-LIST ZENLAYER only_ip_blocks IP ranges
 - `ip-prefix-list/FREE-FIRE_GARENA-only_ip_blocks.yaml` - IP-PREFIX-LIST FREE-FIRE_GARENA only_ip_blocks IP ranges
 - `ip-prefix-list/AMAZON-only_ip_blocks.yaml` - IP-PREFIX-LIST AMAZON only_ip_blocks IP ranges
 - `ip-prefix-list/ZOOM-only_ip_blocks.yaml` - IP-PREFIX-LIST ZOOM only_ip_blocks IP ranges
@@ -143,5 +142,5 @@ rules:
 - `ip-prefix-list/GOOGLE-only_ip_blocks.yaml` - IP-PREFIX-LIST GOOGLE only_ip_blocks IP ranges
 - `ip-prefix-list/FACEBOOK-only_ip_blocks.yaml` - IP-PREFIX-LIST FACEBOOK only_ip_blocks IP ranges
 
-*Last updated: 2026-01-09T12:35:33.502361Z*
-*Total files converted: 93*
+*Last updated: 2026-01-10T01:17:08.347424Z*
+*Total files converted: 92*
