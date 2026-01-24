@@ -125,6 +125,7 @@ rules:
 - `ip-prefix-list/VALVE-only_ip_blocks.yaml` - IP-PREFIX-LIST VALVE only_ip_blocks IP ranges
 - `ip-prefix-list/CDN77-only_ip_blocks.yaml` - IP-PREFIX-LIST CDN77 only_ip_blocks IP ranges
 - `ip-prefix-list/TELEGRAM-only_ip_blocks.yaml` - IP-PREFIX-LIST TELEGRAM only_ip_blocks IP ranges
+- `ip-prefix-list/ZENLAYER-only_ip_blocks.yaml` - IP-PREFIX-LIST ZENLAYER only_ip_blocks IP ranges
 - `ip-prefix-list/FREE-FIRE_GARENA-only_ip_blocks.yaml` - IP-PREFIX-LIST FREE-FIRE_GARENA only_ip_blocks IP ranges
 - `ip-prefix-list/AMAZON-only_ip_blocks.yaml` - IP-PREFIX-LIST AMAZON only_ip_blocks IP ranges
 - `ip-prefix-list/ZOOM-only_ip_blocks.yaml` - IP-PREFIX-LIST ZOOM only_ip_blocks IP ranges
@@ -141,5 +142,5 @@ rules:
 - `ip-prefix-list/GOOGLE-only_ip_blocks.yaml` - IP-PREFIX-LIST GOOGLE only_ip_blocks IP ranges
 - `ip-prefix-list/FACEBOOK-only_ip_blocks.yaml` - IP-PREFIX-LIST FACEBOOK only_ip_blocks IP ranges
 
-*Last updated: 2026-01-23T12:37:40.171011Z*
-*Total files converted: 91*
+*Last updated: 2026-01-24T01:17:30.536594Z*
+*Total files converted: 92*
