@@ -50,7 +50,6 @@ rules:
 ## Files
 
 - `ipranges/all-ipv4.yaml` - IPRANGES ALL ipv4 IP ranges
-- `ipranges/all-ipv6_merged.yaml` - IPRANGES ALL ipv6_merged IP ranges
 - `ipranges/all-ipv6.yaml` - IPRANGES ALL ipv6 IP ranges
 - `ipranges/all-ipv4_merged.yaml` - IPRANGES ALL ipv4_merged IP ranges
 - `ipranges/googlebot-ipv4.yaml` - IPRANGES GOOGLEBOT ipv4 IP ranges
@@ -91,6 +90,10 @@ rules:
 - `ipranges/cloudflare-ipv6_merged.yaml` - IPRANGES CLOUDFLARE ipv6_merged IP ranges
 - `ipranges/cloudflare-ipv6.yaml` - IPRANGES CLOUDFLARE ipv6 IP ranges
 - `ipranges/cloudflare-ipv4_merged.yaml` - IPRANGES CLOUDFLARE ipv4_merged IP ranges
+- `ipranges/duckduckbot-ipv4.yaml` - IPRANGES DUCKDUCKBOT ipv4 IP ranges
+- `ipranges/duckduckbot-ipv4_merged.yaml` - IPRANGES DUCKDUCKBOT ipv4_merged IP ranges
+- `ipranges/duckassistbot-ipv4.yaml` - IPRANGES DUCKASSISTBOT ipv4 IP ranges
+- `ipranges/duckassistbot-ipv4_merged.yaml` - IPRANGES DUCKASSISTBOT ipv4_merged IP ranges
 - `ipranges/apple-proxy-ipv4.yaml` - IPRANGES APPLE-PROXY ipv4 IP ranges
 - `ipranges/apple-proxy-ipv6_merged.yaml` - IPRANGES APPLE-PROXY ipv6_merged IP ranges
 - `ipranges/apple-proxy-ipv6.yaml` - IPRANGES APPLE-PROXY ipv6 IP ranges
@@ -103,6 +106,8 @@ rules:
 - `ipranges/facebook-ipv6_merged.yaml` - IPRANGES FACEBOOK ipv6_merged IP ranges
 - `ipranges/facebook-ipv6.yaml` - IPRANGES FACEBOOK ipv6 IP ranges
 - `ipranges/facebook-ipv4_merged.yaml` - IPRANGES FACEBOOK ipv4_merged IP ranges
+- `ipranges/statuscake-ipv4.yaml` - IPRANGES STATUSCAKE ipv4 IP ranges
+- `ipranges/statuscake-ipv4_merged.yaml` - IPRANGES STATUSCAKE ipv4_merged IP ranges
 - `ipranges/amazon-ipv4.yaml` - IPRANGES AMAZON ipv4 IP ranges
 - `ipranges/amazon-ipv6_merged.yaml` - IPRANGES AMAZON ipv6_merged IP ranges
 - `ipranges/amazon-ipv6.yaml` - IPRANGES AMAZON ipv6 IP ranges
@@ -115,6 +120,9 @@ rules:
 - `ipranges/microsoft-ipv4_merged.yaml` - IPRANGES MICROSOFT ipv4_merged IP ranges
 - `ipranges/protonvpn-ipv4.yaml` - IPRANGES PROTONVPN ipv4 IP ranges
 - `ipranges/protonvpn-ipv4_merged.yaml` - IPRANGES PROTONVPN ipv4_merged IP ranges
+- `ipranges/pingdom-ipv4.yaml` - IPRANGES PINGDOM ipv4 IP ranges
+- `ipranges/pingdom-ipv6.yaml` - IPRANGES PINGDOM ipv6 IP ranges
+- `ipranges/pingdom-ipv4_merged.yaml` - IPRANGES PINGDOM ipv4_merged IP ranges
 - `youtube/ipv4.yaml` - YOUTUBE  ipv4 IP ranges
 - `youtube/cidr6.yaml` - YOUTUBE  cidr6 IP ranges
 - `youtube/ipv6.yaml` - YOUTUBE  ipv6 IP ranges
@@ -144,5 +152,5 @@ rules:
 - `ip-prefix-list/GOOGLE_CLOUD-only_ip_blocks.yaml` - IP-PREFIX-LIST GOOGLE_CLOUD only_ip_blocks IP ranges
 - `ip-prefix-list/AKAMAI-only_ip_blocks.yaml` - IP-PREFIX-LIST AKAMAI only_ip_blocks IP ranges
 
-*Last updated: 2026-03-16T13:00:23.437433Z*
-*Total files converted: 94*
+*Last updated: 2026-03-17T01:46:42.596807Z*
+*Total files converted: 102*
