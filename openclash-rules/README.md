@@ -50,6 +50,7 @@ rules:
 ## Files
 
 - `ipranges/all-ipv4.yaml` - IPRANGES ALL ipv4 IP ranges
+- `ipranges/all-ipv6_merged.yaml` - IPRANGES ALL ipv6_merged IP ranges
 - `ipranges/all-ipv6.yaml` - IPRANGES ALL ipv6 IP ranges
 - `ipranges/all-ipv4_merged.yaml` - IPRANGES ALL ipv4_merged IP ranges
 - `ipranges/googlebot-ipv4.yaml` - IPRANGES GOOGLEBOT ipv4 IP ranges
@@ -121,6 +122,7 @@ rules:
 - `ipranges/protonvpn-ipv4.yaml` - IPRANGES PROTONVPN ipv4 IP ranges
 - `ipranges/protonvpn-ipv4_merged.yaml` - IPRANGES PROTONVPN ipv4_merged IP ranges
 - `ipranges/pingdom-ipv4.yaml` - IPRANGES PINGDOM ipv4 IP ranges
+- `ipranges/pingdom-ipv6_merged.yaml` - IPRANGES PINGDOM ipv6_merged IP ranges
 - `ipranges/pingdom-ipv6.yaml` - IPRANGES PINGDOM ipv6 IP ranges
 - `ipranges/pingdom-ipv4_merged.yaml` - IPRANGES PINGDOM ipv4_merged IP ranges
 - `youtube/ipv4.yaml` - YOUTUBE  ipv4 IP ranges
@@ -152,5 +154,5 @@ rules:
 - `ip-prefix-list/GOOGLE_CLOUD-only_ip_blocks.yaml` - IP-PREFIX-LIST GOOGLE_CLOUD only_ip_blocks IP ranges
 - `ip-prefix-list/AKAMAI-only_ip_blocks.yaml` - IP-PREFIX-LIST AKAMAI only_ip_blocks IP ranges
 
-*Last updated: 2026-03-17T01:46:42.596807Z*
-*Total files converted: 102*
+*Last updated: 2026-03-17T13:01:03.475906Z*
+*Total files converted: 104*
