@@ -154,5 +154,5 @@ rules:
 - `ip-prefix-list/GOOGLE_CLOUD-only_ip_blocks.yaml` - IP-PREFIX-LIST GOOGLE_CLOUD only_ip_blocks IP ranges
 - `ip-prefix-list/AKAMAI-only_ip_blocks.yaml` - IP-PREFIX-LIST AKAMAI only_ip_blocks IP ranges
 
-*Last updated: 2026-03-19T12:54:15.381390Z*
+*Last updated: 2026-03-20T01:46:23.224712Z*
 *Total files converted: 104*
