@@ -154,5 +154,5 @@ rules:
 - `ip-prefix-list/ALIBABA-only_ip_blocks.yaml` - IP-PREFIX-LIST ALIBABA only_ip_blocks IP ranges
 - `ip-prefix-list/CDN77-only_ip_blocks.yaml` - IP-PREFIX-LIST CDN77 only_ip_blocks IP ranges
 
-*Last updated: 2026-04-03T01:55:35.956702Z*
+*Last updated: 2026-04-03T12:53:52.530133Z*
 *Total files converted: 104*
