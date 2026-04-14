@@ -154,5 +154,5 @@ rules:
 - `ip-prefix-list/AKAMAI-only_ip_blocks.yaml` - IP-PREFIX-LIST AKAMAI only_ip_blocks IP ranges
 - `ip-prefix-list/FACEBOOK-only_ip_blocks.yaml` - IP-PREFIX-LIST FACEBOOK only_ip_blocks IP ranges
 
-*Last updated: 2026-04-14T02:04:49.219735Z*
+*Last updated: 2026-04-14T13:16:26.483555Z*
 *Total files converted: 104*
