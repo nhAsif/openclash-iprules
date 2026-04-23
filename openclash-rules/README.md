@@ -154,5 +154,5 @@ rules:
 - `ip-prefix-list/GOOGLE_CLOUD-only_ip_blocks.yaml` - IP-PREFIX-LIST GOOGLE_CLOUD only_ip_blocks IP ranges
 - `ip-prefix-list/MICROSOFT-only_ip_blocks.yaml` - IP-PREFIX-LIST MICROSOFT only_ip_blocks IP ranges
 
-*Last updated: 2026-04-22T13:16:19.059715Z*
+*Last updated: 2026-04-23T02:08:46.230399Z*
 *Total files converted: 104*
