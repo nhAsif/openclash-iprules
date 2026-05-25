@@ -154,5 +154,5 @@ rules:
 - `ip-prefix-list/ALIBABA-only_ip_blocks.yaml` - IP-PREFIX-LIST ALIBABA only_ip_blocks IP ranges
 - `ip-prefix-list/FREE-FIRE_GARENA-only_ip_blocks.yaml` - IP-PREFIX-LIST FREE-FIRE_GARENA only_ip_blocks IP ranges
 
-*Last updated: 2026-05-25T02:55:37.420611Z*
+*Last updated: 2026-05-25T14:44:54.371630Z*
 *Total files converted: 104*
