@@ -154,5 +154,5 @@ rules:
 - `ip-prefix-list/AKAMAI-only_ip_blocks.yaml` - IP-PREFIX-LIST AKAMAI only_ip_blocks IP ranges
 - `ip-prefix-list/BIGO-only_ip_blocks.yaml` - IP-PREFIX-LIST BIGO only_ip_blocks IP ranges
 
-*Last updated: 2026-06-09T14:38:19.868019Z*
+*Last updated: 2026-06-10T02:54:01.664807Z*
 *Total files converted: 104*
