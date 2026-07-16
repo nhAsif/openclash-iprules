@@ -154,5 +154,5 @@ rules:
 - `ip-prefix-list/ZOOM-only_ip_blocks.yaml` - IP-PREFIX-LIST ZOOM only_ip_blocks IP ranges
 - `ip-prefix-list/AKAMAI-only_ip_blocks.yaml` - IP-PREFIX-LIST AKAMAI only_ip_blocks IP ranges
 
-*Last updated: 2026-07-15T13:25:08.107102Z*
+*Last updated: 2026-07-16T02:06:24.120697Z*
 *Total files converted: 104*
