@@ -154,5 +154,5 @@ rules:
 - `ip-prefix-list/IMO_PageBites-only_ip_blocks.yaml` - IP-PREFIX-LIST IMO_PAGEBITES only_ip_blocks IP ranges
 - `ip-prefix-list/CDN77-only_ip_blocks.yaml` - IP-PREFIX-LIST CDN77 only_ip_blocks IP ranges
 
-*Last updated: 2026-07-17T02:09:45.298672Z*
+*Last updated: 2026-07-17T13:16:59.789729Z*
 *Total files converted: 104*
