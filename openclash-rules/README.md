@@ -78,7 +78,6 @@ rules:
 - `ipranges/linode-ipv6_merged.yaml` - IPRANGES LINODE ipv6_merged IP ranges
 - `ipranges/linode-ipv6.yaml` - IPRANGES LINODE ipv6 IP ranges
 - `ipranges/all-ipv4.yaml` - IPRANGES ALL ipv4 IP ranges
-- `ipranges/all-ipv4_merged.yaml` - IPRANGES ALL ipv4_merged IP ranges
 - `ipranges/all-ipv6_merged.yaml` - IPRANGES ALL ipv6_merged IP ranges
 - `ipranges/all-ipv6.yaml` - IPRANGES ALL ipv6 IP ranges
 - `ipranges/vultr-ipv4.yaml` - IPRANGES VULTR ipv4 IP ranges
@@ -86,7 +85,6 @@ rules:
 - `ipranges/vultr-ipv6_merged.yaml` - IPRANGES VULTR ipv6_merged IP ranges
 - `ipranges/vultr-ipv6.yaml` - IPRANGES VULTR ipv6 IP ranges
 - `ipranges/github-ipv4.yaml` - IPRANGES GITHUB ipv4 IP ranges
-- `ipranges/github-ipv4_merged.yaml` - IPRANGES GITHUB ipv4_merged IP ranges
 - `ipranges/github-ipv6_merged.yaml` - IPRANGES GITHUB ipv6_merged IP ranges
 - `ipranges/github-ipv6.yaml` - IPRANGES GITHUB ipv6 IP ranges
 - `ipranges/digitalocean-ipv4.yaml` - IPRANGES DIGITALOCEAN ipv4 IP ranges
@@ -154,5 +152,5 @@ rules:
 - `ip-prefix-list/IMO_PageBites-only_ip_blocks.yaml` - IP-PREFIX-LIST IMO_PAGEBITES only_ip_blocks IP ranges
 - `ip-prefix-list/CDN77-only_ip_blocks.yaml` - IP-PREFIX-LIST CDN77 only_ip_blocks IP ranges
 
-*Last updated: 2026-07-22T13:39:00.107136Z*
-*Total files converted: 104*
+*Last updated: 2026-07-23T02:13:39.199159Z*
+*Total files converted: 102*
