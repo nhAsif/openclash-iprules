@@ -152,5 +152,5 @@ rules:
 - `ip-prefix-list/DIGITALOCEAN-only_ip_blocks.yaml` - IP-PREFIX-LIST DIGITALOCEAN only_ip_blocks IP ranges
 - `ip-prefix-list/FACEBOOK-only_ip_blocks.yaml` - IP-PREFIX-LIST FACEBOOK only_ip_blocks IP ranges
 
-*Last updated: 2026-07-30T01:55:31.247039Z*
+*Last updated: 2026-07-30T13:47:04.669973Z*
 *Total files converted: 102*
