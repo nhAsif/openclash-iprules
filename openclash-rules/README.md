@@ -75,6 +75,7 @@ rules:
 - `ipranges/facebook-ipv6.yaml` - IPRANGES FACEBOOK ipv6 IP ranges
 - `ipranges/github-ipv4.yaml` - IPRANGES GITHUB ipv4 IP ranges
 - `ipranges/github-ipv6_merged.yaml` - IPRANGES GITHUB ipv6_merged IP ranges
+- `ipranges/github-ipv4_merged.yaml` - IPRANGES GITHUB ipv4_merged IP ranges
 - `ipranges/github-ipv6.yaml` - IPRANGES GITHUB ipv6 IP ranges
 - `ipranges/vultr-ipv4.yaml` - IPRANGES VULTR ipv4 IP ranges
 - `ipranges/vultr-ipv6_merged.yaml` - IPRANGES VULTR ipv6_merged IP ranges
@@ -100,6 +101,7 @@ rules:
 - `ipranges/statuscake-ipv4_merged.yaml` - IPRANGES STATUSCAKE ipv4_merged IP ranges
 - `ipranges/all-ipv4.yaml` - IPRANGES ALL ipv4 IP ranges
 - `ipranges/all-ipv6_merged.yaml` - IPRANGES ALL ipv6_merged IP ranges
+- `ipranges/all-ipv4_merged.yaml` - IPRANGES ALL ipv4_merged IP ranges
 - `ipranges/all-ipv6.yaml` - IPRANGES ALL ipv6 IP ranges
 - `ipranges/google-ipv4.yaml` - IPRANGES GOOGLE ipv4 IP ranges
 - `ipranges/google-ipv6_merged.yaml` - IPRANGES GOOGLE ipv6_merged IP ranges
@@ -152,5 +154,5 @@ rules:
 - `ip-prefix-list/DIGITALOCEAN-only_ip_blocks.yaml` - IP-PREFIX-LIST DIGITALOCEAN only_ip_blocks IP ranges
 - `ip-prefix-list/FACEBOOK-only_ip_blocks.yaml` - IP-PREFIX-LIST FACEBOOK only_ip_blocks IP ranges
 
-*Last updated: 2026-07-31T02:14:30.151984Z*
-*Total files converted: 102*
+*Last updated: 2026-07-31T13:51:50.429038Z*
+*Total files converted: 104*
