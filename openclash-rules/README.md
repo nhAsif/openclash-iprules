@@ -129,30 +129,23 @@ rules:
 - `youtube/cidr6.yaml` - YOUTUBE  cidr6 IP ranges
 - `youtube/cidr4.yaml` - YOUTUBE  cidr4 IP ranges
 - `youtube/ipv6.yaml` - YOUTUBE  ipv6 IP ranges
-- `ip-prefix-list/NETFLIX-only_ip_blocks.yaml` - IP-PREFIX-LIST NETFLIX only_ip_blocks IP ranges
 - `ip-prefix-list/PUBG_TENCENT-only_ip_blocks.yaml` - IP-PREFIX-LIST PUBG_TENCENT only_ip_blocks IP ranges
 - `ip-prefix-list/AWS_CLOUDFRONT-only_ip_blocks.yaml` - IP-PREFIX-LIST AWS_CLOUDFRONT only_ip_blocks IP ranges
 - `ip-prefix-list/FASTLY-only_ip_blocks.yaml` - IP-PREFIX-LIST FASTLY only_ip_blocks IP ranges
-- `ip-prefix-list/ALIBABA-only_ip_blocks.yaml` - IP-PREFIX-LIST ALIBABA only_ip_blocks IP ranges
 - `ip-prefix-list/VALVE-only_ip_blocks.yaml` - IP-PREFIX-LIST VALVE only_ip_blocks IP ranges
 - `ip-prefix-list/GOOGLE-only_ip_blocks.yaml` - IP-PREFIX-LIST GOOGLE only_ip_blocks IP ranges
 - `ip-prefix-list/MICROSOFT-only_ip_blocks.yaml` - IP-PREFIX-LIST MICROSOFT only_ip_blocks IP ranges
 - `ip-prefix-list/LINODE-only_ip_blocks.yaml` - IP-PREFIX-LIST LINODE only_ip_blocks IP ranges
-- `ip-prefix-list/TELEGRAM-only_ip_blocks.yaml` - IP-PREFIX-LIST TELEGRAM only_ip_blocks IP ranges
 - `ip-prefix-list/CLOUDFLARE-only_ip_blocks.yaml` - IP-PREFIX-LIST CLOUDFLARE only_ip_blocks IP ranges
 - `ip-prefix-list/AWS_EC2-only_ip_blocks.yaml` - IP-PREFIX-LIST AWS_EC2 only_ip_blocks IP ranges
-- `ip-prefix-list/AKAMAI-only_ip_blocks.yaml` - IP-PREFIX-LIST AKAMAI only_ip_blocks IP ranges
 - `ip-prefix-list/ZOOM-only_ip_blocks.yaml` - IP-PREFIX-LIST ZOOM only_ip_blocks IP ranges
 - `ip-prefix-list/AWS_S3-only_ip_blocks.yaml` - IP-PREFIX-LIST AWS_S3 only_ip_blocks IP ranges
-- `ip-prefix-list/ZENLAYER-only_ip_blocks.yaml` - IP-PREFIX-LIST ZENLAYER only_ip_blocks IP ranges
 - `ip-prefix-list/GOOGLE_CLOUD-only_ip_blocks.yaml` - IP-PREFIX-LIST GOOGLE_CLOUD only_ip_blocks IP ranges
 - `ip-prefix-list/FREE-FIRE_GARENA-only_ip_blocks.yaml` - IP-PREFIX-LIST FREE-FIRE_GARENA only_ip_blocks IP ranges
 - `ip-prefix-list/CDN77-only_ip_blocks.yaml` - IP-PREFIX-LIST CDN77 only_ip_blocks IP ranges
 - `ip-prefix-list/IMO_PageBites-only_ip_blocks.yaml` - IP-PREFIX-LIST IMO_PAGEBITES only_ip_blocks IP ranges
-- `ip-prefix-list/BIGO-only_ip_blocks.yaml` - IP-PREFIX-LIST BIGO only_ip_blocks IP ranges
 - `ip-prefix-list/AMAZON-only_ip_blocks.yaml` - IP-PREFIX-LIST AMAZON only_ip_blocks IP ranges
 - `ip-prefix-list/DIGITALOCEAN-only_ip_blocks.yaml` - IP-PREFIX-LIST DIGITALOCEAN only_ip_blocks IP ranges
-- `ip-prefix-list/FACEBOOK-only_ip_blocks.yaml` - IP-PREFIX-LIST FACEBOOK only_ip_blocks IP ranges
 
-*Last updated: 2026-08-05T13:55:21.454968Z*
-*Total files converted: 104*
+*Last updated: 2026-08-06T02:04:32.677592Z*
+*Total files converted: 97*
