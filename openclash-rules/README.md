@@ -147,5 +147,5 @@ rules:
 - `ip-prefix-list/AMAZON-only_ip_blocks.yaml` - IP-PREFIX-LIST AMAZON only_ip_blocks IP ranges
 - `ip-prefix-list/DIGITALOCEAN-only_ip_blocks.yaml` - IP-PREFIX-LIST DIGITALOCEAN only_ip_blocks IP ranges
 
-*Last updated: 2026-08-13T01:26:09.708626Z*
+*Last updated: 2026-08-13T12:57:39.940205Z*
 *Total files converted: 97*
