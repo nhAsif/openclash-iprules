@@ -147,5 +147,5 @@ rules:
 - `ip-prefix-list/FREE-FIRE_GARENA-only_ip_blocks.yaml` - IP-PREFIX-LIST FREE-FIRE_GARENA only_ip_blocks IP ranges
 - `ip-prefix-list/AWS_CLOUDFRONT-only_ip_blocks.yaml` - IP-PREFIX-LIST AWS_CLOUDFRONT only_ip_blocks IP ranges
 
-*Last updated: 2026-09-02T02:29:52.621551Z*
+*Last updated: 2026-09-02T15:50:36.943999Z*
 *Total files converted: 97*
