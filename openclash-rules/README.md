@@ -147,5 +147,5 @@ rules:
 - `ip-prefix-list/CDN77-only_ip_blocks.yaml` - IP-PREFIX-LIST CDN77 only_ip_blocks IP ranges
 - `ip-prefix-list/FREE-FIRE_GARENA-only_ip_blocks.yaml` - IP-PREFIX-LIST FREE-FIRE_GARENA only_ip_blocks IP ranges
 
-*Last updated: 2026-09-09T02:41:43.354857Z*
+*Last updated: 2026-09-09T15:47:52.983707Z*
 *Total files converted: 97*
