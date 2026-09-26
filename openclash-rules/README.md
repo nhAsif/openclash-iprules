@@ -147,5 +147,5 @@ rules:
 - `ip-prefix-list/AWS_S3-only_ip_blocks.yaml` - IP-PREFIX-LIST AWS_S3 only_ip_blocks IP ranges
 - `ip-prefix-list/AWS_CLOUDFRONT-only_ip_blocks.yaml` - IP-PREFIX-LIST AWS_CLOUDFRONT only_ip_blocks IP ranges
 
-*Last updated: 2026-09-25T16:21:23.494109Z*
+*Last updated: 2026-09-26T03:08:15.622866Z*
 *Total files converted: 97*
