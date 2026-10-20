@@ -119,6 +119,8 @@ rules:
 - `ipranges/duckassistbot-ipv4_merged.yaml` - IPRANGES DUCKASSISTBOT ipv4_merged IP ranges
 - `ipranges/oracle-ipv4.yaml` - IPRANGES ORACLE ipv4 IP ranges
 - `ipranges/oracle-ipv4_merged.yaml` - IPRANGES ORACLE ipv4_merged IP ranges
+- `ipranges/statuscake-ipv4.yaml` - IPRANGES STATUSCAKE ipv4 IP ranges
+- `ipranges/statuscake-ipv4_merged.yaml` - IPRANGES STATUSCAKE ipv4_merged IP ranges
 - `ipranges/telegram-ipv6_merged.yaml` - IPRANGES TELEGRAM ipv6_merged IP ranges
 - `ipranges/telegram-ipv6.yaml` - IPRANGES TELEGRAM ipv6 IP ranges
 - `ipranges/telegram-ipv4.yaml` - IPRANGES TELEGRAM ipv4 IP ranges
@@ -145,5 +147,5 @@ rules:
 - `ip-prefix-list/AWS_S3-only_ip_blocks.yaml` - IP-PREFIX-LIST AWS_S3 only_ip_blocks IP ranges
 - `ip-prefix-list/AWS_CLOUDFRONT-only_ip_blocks.yaml` - IP-PREFIX-LIST AWS_CLOUDFRONT only_ip_blocks IP ranges
 
-*Last updated: 2026-10-20T03:04:50.406300Z*
-*Total files converted: 95*
+*Last updated: 2026-10-20T16:13:18.701102Z*
+*Total files converted: 97*
