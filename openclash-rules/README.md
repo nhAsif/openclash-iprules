@@ -63,6 +63,7 @@ rules:
 - `ipranges/facebook-ipv6.yaml` - IPRANGES FACEBOOK ipv6 IP ranges
 - `ipranges/perplexity-ipv4_merged.yaml` - IPRANGES PERPLEXITY ipv4_merged IP ranges
 - `ipranges/perplexity-ipv4.yaml` - IPRANGES PERPLEXITY ipv4 IP ranges
+- `ipranges/all-ipv4_merged.yaml` - IPRANGES ALL ipv4_merged IP ranges
 - `ipranges/all-ipv6_merged.yaml` - IPRANGES ALL ipv6_merged IP ranges
 - `ipranges/all-ipv4.yaml` - IPRANGES ALL ipv4 IP ranges
 - `ipranges/all-ipv6.yaml` - IPRANGES ALL ipv6 IP ranges
@@ -70,6 +71,8 @@ rules:
 - `ipranges/apple-proxy-ipv6_merged.yaml` - IPRANGES APPLE-PROXY ipv6_merged IP ranges
 - `ipranges/apple-proxy-ipv4.yaml` - IPRANGES APPLE-PROXY ipv4 IP ranges
 - `ipranges/apple-proxy-ipv6.yaml` - IPRANGES APPLE-PROXY ipv6 IP ranges
+- `ipranges/statuscake-ipv4_merged.yaml` - IPRANGES STATUSCAKE ipv4_merged IP ranges
+- `ipranges/statuscake-ipv4.yaml` - IPRANGES STATUSCAKE ipv4 IP ranges
 - `ipranges/telegram-ipv4_merged.yaml` - IPRANGES TELEGRAM ipv4_merged IP ranges
 - `ipranges/telegram-ipv6_merged.yaml` - IPRANGES TELEGRAM ipv6_merged IP ranges
 - `ipranges/telegram-ipv4.yaml` - IPRANGES TELEGRAM ipv4 IP ranges
@@ -144,5 +147,5 @@ rules:
 - `ip-prefix-list/FREE-FIRE_GARENA-only_ip_blocks.yaml` - IP-PREFIX-LIST FREE-FIRE_GARENA only_ip_blocks IP ranges
 - `ip-prefix-list/AWS_EC2-only_ip_blocks.yaml` - IP-PREFIX-LIST AWS_EC2 only_ip_blocks IP ranges
 
-*Last updated: 2026-10-21T16:28:48.949445Z*
-*Total files converted: 94*
+*Last updated: 2026-10-22T02:58:21.781981Z*
+*Total files converted: 97*
