@@ -147,5 +147,5 @@ rules:
 - `ip-prefix-list/FASTLY-only_ip_blocks.yaml` - IP-PREFIX-LIST FASTLY only_ip_blocks IP ranges
 - `ip-prefix-list/AMAZON-only_ip_blocks.yaml` - IP-PREFIX-LIST AMAZON only_ip_blocks IP ranges
 
-*Last updated: 2026-10-29T03:59:41.336470Z*
+*Last updated: 2026-10-29T17:55:25.704279Z*
 *Total files converted: 97*
