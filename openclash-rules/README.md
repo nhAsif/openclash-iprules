@@ -147,5 +147,5 @@ rules:
 - `ip-prefix-list/MICROSOFT-only_ip_blocks.yaml` - IP-PREFIX-LIST MICROSOFT only_ip_blocks IP ranges
 - `ip-prefix-list/CDN77-only_ip_blocks.yaml` - IP-PREFIX-LIST CDN77 only_ip_blocks IP ranges
 
-*Last updated: 2026-11-04T19:15:12.824002Z*
+*Last updated: 2026-11-05T04:47:32.054961Z*
 *Total files converted: 97*
