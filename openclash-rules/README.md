@@ -147,5 +147,5 @@ rules:
 - `ip-prefix-list/GOOGLE-only_ip_blocks.yaml` - IP-PREFIX-LIST GOOGLE only_ip_blocks IP ranges
 - `ip-prefix-list/AWS_EC2-only_ip_blocks.yaml` - IP-PREFIX-LIST AWS_EC2 only_ip_blocks IP ranges
 
-*Last updated: 2026-11-14T17:35:06.098207Z*
+*Last updated: 2026-11-15T04:27:29.609160Z*
 *Total files converted: 97*
