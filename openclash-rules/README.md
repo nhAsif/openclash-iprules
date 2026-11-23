@@ -147,5 +147,5 @@ rules:
 - `ip-prefix-list/VALVE-only_ip_blocks.yaml` - IP-PREFIX-LIST VALVE only_ip_blocks IP ranges
 - `ip-prefix-list/PUBG_TENCENT-only_ip_blocks.yaml` - IP-PREFIX-LIST PUBG_TENCENT only_ip_blocks IP ranges
 
-*Last updated: 2026-11-22T18:57:19.491622Z*
+*Last updated: 2026-11-23T05:20:32.158780Z*
 *Total files converted: 97*
