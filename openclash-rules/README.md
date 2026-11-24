@@ -147,5 +147,5 @@ rules:
 - `ip-prefix-list/FREE-FIRE_GARENA-only_ip_blocks.yaml` - IP-PREFIX-LIST FREE-FIRE_GARENA only_ip_blocks IP ranges
 - `ip-prefix-list/PUBG_TENCENT-only_ip_blocks.yaml` - IP-PREFIX-LIST PUBG_TENCENT only_ip_blocks IP ranges
 
-*Last updated: 2026-11-24T08:00:18.573107Z*
+*Last updated: 2026-11-24T21:51:26.902515Z*
 *Total files converted: 97*
